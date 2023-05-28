@@ -29,7 +29,7 @@
             android:textAlignment="center"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:text="Hi,Ujang maman"
+            android:text="@string/home_name"
             app:layout_constraintBottom_toBottomOf="@+id/ivProfile"
             app:layout_constraintStart_toEndOf="@+id/ivProfile"
             app:layout_constraintTop_toTopOf="@+id/ivProfile" />
@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Artikel"
+            android:text="@string/artikel_title"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/card_img"
