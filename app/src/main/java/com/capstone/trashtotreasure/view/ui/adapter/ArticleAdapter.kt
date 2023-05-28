@@ -23,6 +23,7 @@ class ArticleAdapter(private val context: HomeFragment, private var list: List<A
         holder.binding.tvItemTitle.text = news?.title
         holder.binding.tvItemPublishedDate.text = news?.publishedAt
 
+
         Glide.with(holder.itemView.context)
             .load(news?.urlToImage)
             .into(holder.binding.imgPoster)
