@@ -1,8 +1,13 @@
-package com.capstone.trashtotreasure.model.data.entitiy
+package com.capstone.trashtotreasure.model.data.local.entitiy
 
+import android.os.Parcelable
 import androidx.room.ColumnInfo
+import androidx.room.Entity
 import androidx.room.PrimaryKey
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
+@Entity(tableName = "news")
 class ArticleEntity (
     @field:ColumnInfo(name = "title")
     @field:PrimaryKey
@@ -19,5 +24,5 @@ class ArticleEntity (
 
     @field:ColumnInfo(name = "bookmarked")
     var isBookmarked: Boolean
-    )
+    ) : Parcelable
 

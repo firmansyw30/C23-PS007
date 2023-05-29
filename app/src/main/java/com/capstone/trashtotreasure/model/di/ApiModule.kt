@@ -14,4 +14,5 @@ object ApiModule {
     @Provides
     @Singleton
     fun provideApiService(): ApiService = ApiConfig.getApiService()
+
 }

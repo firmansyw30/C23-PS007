@@ -7,5 +7,5 @@ import retrofit2.http.Query
 
 interface ApiService {
     @GET("everything?q=plastic")
-    suspend fun getArticle(@Query("apiKey") apiKey: String): ArticleResponse
+     fun getArticle(@Query("apiKey") apiKey: String): Call<ArticleResponse>
 }
